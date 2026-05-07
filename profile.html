@@ -5,70 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="./logo.svg">
-  <title>EveryDayEng</title>
+  <title>EveryDayEng — Profile</title>
 </head>
 <body class="bg-gradient-to-r from-cyan-500 to-blue-500 min-h-screen">
-  
-  <header class="container mx-auto py-10">
-    <div class="font-bold text-5xl text-sky-50 text-center">EveryDay English</div>
-  </header>
 
-  <div class="flex flex-col md:flex-row mt-12 px-4 md:px-8 gap-8 items-center md:items-start">
+<header class="container mx-auto py-10">
+  <div class="font-bold text-5xl text-sky-50 text-center">EveryDay English</div>
+</header>
 
-    <nav>
-      <div class="flex flex-row flex-wrap justify-center md:flex-col gap-4">
-        <a href="./app.html" class="w-48 text-center text-blue-800 text-2xl bg-sky-500 py-2 px-4 rounded-full hover:bg-pink-200 hover:scale-110">Start</a>
-        <a href="./register.html" class="w-48 text-center text-blue-800 text-2xl bg-sky-500 py-2 px-4 rounded-full hover:bg-pink-200 hover:scale-110">Register</a>
-        <a href="./login.html" class="w-48 text-center text-blue-800 text-2xl bg-sky-500 py-2 px-4 rounded-full hover:bg-pink-200 hover:scale-110">Login</a>
-        <a href="./profile.html" class="w-48 text-center text-blue-800 text-2xl bg-sky-500 py-2 px-4 rounded-full hover:bg-pink-200 hover:scale-110">Profile</a>
-        <a href="./index.html" class="w-48 text-center text-blue-800 text-2xl bg-sky-500 py-2 px-4 rounded-full hover:bg-pink-200 hover:scale-110">About us</a>
+<div class="flex flex-col md:flex-row mt-12 px-4 md:px-8 gap-8 items-center md:items-start">
+
+  <!-- Navigation -->
+  <nav>
+    <div id="nav-links" class="flex flex-row flex-wrap justify-center md:flex-col gap-4">
+      <a href="./app.html"      class="nav-link">Start</a>
+      <a href="./register.html" class="nav-link">Register</a>
+      <a href="./login.html"    class="nav-link">Login</a>
+      <a href="./profile.html"  class="nav-link">Profile</a>
+      <a href="./index.html"    class="nav-link">About us</a>
+    </div>
+  </nav>
+
+  <main class="flex-1 text-center w-full">
+    <div class="max-w-md mx-auto mt-4 bg-white/95 shadow-xl rounded-3xl p-8 border-t-4 border-cyan-400">
+
+      <!-- Avatar placeholder -->
+      <div class="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full flex items-center justify-center shadow-lg">
+        <span class="text-white text-4xl font-bold" id="profile-avatar">?</span>
       </div>
-    </nav>
 
-    <main class="flex mx-auto pt-0">
-      <div class="max-w-2xl mx-auto bg-white/95 shadow-xl rounded-3xl p-8 border-t-4 border-cyan-400">
-  
-        <h2 class="text-3xl font-bold text-cyan-600 mb-6 text-center">User Profile</h2>
-      
-        <div class="border-4 border-cyan-500 rounded-xl overflow-hidden bg-white">
-          
-          <div class="hidden md:grid grid-cols-2 bg-cyan-100 px-6 py-4 border-b-4 border-cyan-500 font-bold text-cyan-800 text-lg text-left">
-            <div>Field</div>
-            <div>Information</div>
-          </div>
-      
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-4 border-b-2 border-cyan-200 px-6 py-4 hover:bg-cyan-50 transition-colors">
-            <div class="font-semibold text-slate-700 text-left text-sm md:text-base text-cyan-600 md:text-slate-700">Full Name</div>
-            <div class="text-slate-600 text-left text-lg md:text-base font-medium md:font-normal">Jane Smith</div>
-          </div>
-          
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-4 border-b-2 border-cyan-200 px-6 py-4 hover:bg-cyan-50 transition-colors">
-            <div class="font-semibold text-slate-700 text-left text-sm md:text-base text-cyan-600 md:text-slate-700">Email</div>
-            <div class="text-slate-600 text-left text-lg md:text-base font-medium md:font-normal">jane.smith@example.com</div>
-          </div>
-      
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-4 border-b-2 border-cyan-200 px-6 py-4 hover:bg-cyan-50 transition-colors">
-            <div class="font-semibold text-slate-700 text-left text-sm md:text-base text-cyan-600 md:text-slate-700">Sex</div>
-            <div class="text-slate-600 text-left text-lg md:text-base font-medium md:font-normal">Female</div>
-          </div>
-      
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-4 px-6 py-4 hover:bg-cyan-50 transition-colors">
-            <div class="font-semibold text-slate-700 text-left text-sm md:text-base text-cyan-600 md:text-slate-700">Date of birth</div>
-            <div class="text-slate-600 text-left text-lg md:text-base font-medium md:font-normal">01.01.1900</div>
-          </div>
-      
-        </div>
+      <h2 class="text-3xl font-bold text-cyan-800 mb-1" id="profile-name">—</h2>
+      <p class="text-slate-500 text-sm mb-6" id="profile-email">—</p>
+
+      <!-- Stats -->
+      <div class="bg-cyan-50 rounded-2xl p-4 mb-6 border border-cyan-100">
+        <p class="text-cyan-700 font-semibold text-lg" id="profile-stats">0 слів вивчено сьогодні</p>
       </div>
-    </main>
-    
 
-  </div>
-  
-  <footer class="text-center mt-20 mb-8 flex flex-col items-center gap-4">
-    <img src="./logo.svg" alt="EveryDay English Logo" class="w-16 h-16 shadow-lg rounded-2xl transform transition hover:scale-110">
-    <p class="text-white font-medium">If you have questions don't hesitate to contact</p>
-    <p class="text-white font-medium">supercoolsitemaker@gmail.com</p>
-  </footer>
+      <!-- Logout button -->
+      <button id="btn-logout"
+        class="w-full text-white text-xl font-bold bg-pink-400 py-3 rounded-xl hover:bg-pink-500 shadow-lg transform transition duration-300 hover:-translate-y-1">
+        Log Out
+      </button>
 
+      <!-- Guest message (shown if not logged in) -->
+      <div id="guest-message" class="hidden mt-4">
+        <p class="text-slate-500">
+          <a href="./login.html" class="text-cyan-600 font-bold hover:underline">Log in</a>
+          to see your profile.
+        </p>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+<footer class="text-center mt-20 mb-8 flex flex-col items-center gap-4">
+  <img src="./logo.svg" alt="EveryDay English Logo" class="w-16 h-16 shadow-lg rounded-2xl transform transition hover:scale-110">
+  <p class="text-white font-medium">If you have questions don't hesitate to contact</p>
+  <p class="text-white font-medium">supercoolsitemaker@gmail.com</p>
+</footer>
+
+<style>
+  .nav-link {
+    display: block; width: 12rem; text-align: center;
+    color: #1e40af; font-size: 1.5rem; background-color: #7dd3fc;
+    padding: 0.5rem 1rem; border-radius: 9999px;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  .nav-link:hover { background-color: #fbcfe8; transform: scale(1.1); }
+</style>
+
+<script type="module" src="js/main.js"></script>
 </body>
 </html>
